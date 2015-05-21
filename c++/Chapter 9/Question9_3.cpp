@@ -31,8 +31,7 @@ int findMagicIndex1(int arr[], int startInd, int endInd){
 	//right search
 	int rightInd = max(arr[midInd], midInd+1);
 	int right = findMagicIndex1(arr, rightInd, endInd);
-	if(right > -1)
-		return right;
+	return right;
 }
 
 int main(){
